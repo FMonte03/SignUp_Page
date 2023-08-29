@@ -3,8 +3,8 @@
     --beige: #edf5e1;
     --lightGreen: #8ee4af;
     --emerald: #5cdb95;  
-    --lightGray: #b1b1b4;
-    --DarkGray:  #4d4e56;; 
+    --darkgreen: #379683;
+    --imperialBlue: #05386b; 
     box-sizing: border-box;
     background-color: var(--beige);
     overflow: hidden;
