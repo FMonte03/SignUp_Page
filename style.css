@@ -1,0 +1,11 @@
+:root{
+    /*color schemes */ 
+    --beige: #edf5e1;
+    --lightGreen: #8ee4af;
+    --emerald: #5cdb95;  
+    --darkgreen: #379683;
+    --imperialBlue: #05386b; 
+    box-sizing: border-box;
+    background-color: var(--beige);
+
+}
