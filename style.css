@@ -5,12 +5,15 @@
     --emerald: #5cdb95;  
     --darkgreen: #379683;
     --imperialBlue: #05386b; 
+    --lightBlue: #bdd6ee; 
     box-sizing: border-box;
     background-color: var(--beige);
     overflow: hidden;
+    --headerfont: 'Open Sans', sans-serif;
 
 }
 body{
+    box-sizing: border-box;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -19,8 +22,11 @@ body{
 }
 
 .signUpRight{
-    background-color: var(--lightGreen);
+    background-color: var(--lightBlue);
     width: 30vw;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -28,6 +34,10 @@ body{
     border-radius: 50%;
     height: auto;
     width: 100px;
+}
+
+i{
+    color: var(--darkgreen);
 }
 
 .forest{
@@ -46,6 +56,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5%;
 }
 
 .imgLeft{
@@ -55,9 +66,43 @@ body{
 
 .titleBackground h1{
     font-weight: bold;
-    color: #5cdb95;
+    color: var(--emerald);
     text-align: center;
     font-size: 32px;
+}
+
+form{
+    height: 100%;
+}
+
+.formWrapper{
+    width: 100%;
+    display: block;
+
+
+    
+}
+
+
+button{
+    margin-top: 10px;
+    width: 100%;
+    height: 26px;
+}
+label{
+    font-family: 'Open sans', sans-serif;
+}
+
+input{
+
+
+    width: 98%;
+    height: 20px;
+    
+}
+
+input:focus{
+    outline-color: #5cdb95;
 }
 
 .wrapper{
@@ -65,5 +110,5 @@ body{
     flex-direction: row;
     width: 60vw;
     height: 80vh;
-
+    box-shadow: 0px 6px 20px 0px   rgba(0, 0, 0, 0.19);
 }

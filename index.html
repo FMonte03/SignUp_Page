@@ -8,6 +8,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="wrapper">
@@ -15,33 +18,40 @@
             <div class="imgLeft">
                 <div class="imageBackground">
                     <img class="forest" src="solar.jpg" alt="">
-                
+                    
                     <div class="titleBackground">
-                        <h1>FM Energy <br/> Your Energy Problems Turned Green</h1>
+                        <img class="logo" src="logo.png" alt="FM Energy">
+                        <h1>FM Energy</h1>
                     </div>
                 </div>
             </div>
 
             <div class="signUpRight">
-                <img class="logo" src="logo.png" alt="FM Energy">
-                <p>It may look it, but this is not a real service! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                <h1>FM Energy <br/> Your Energy Problems Turned <i> Green </i>  </h1>
+                <p>This is not a real service! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                
+                <h1>Sign Up</h1>
                 <form action="" method="post">
-                    <label for="fName">First Name</label>
-                    <input type="text" id="fName" required>
 
-                    <label for="lName">LastName</label>
-                    <input type="text" id="lName">
+                    
+                        <div class="formWrapper">
+                           
+                                <label for="fName">Full Name</label>
+                                <input type="text" id="fName" required>
 
-                    <label for="mail">Email</label>
-                    <input type="email" id="mail">
+                                <label for="mail">Email</label>
+                                <input type="email" id="mail">
 
-                    <label for="number">Phone Number</label><input id="number" type="tel">
+                                <label for="pass">Password</label><input id="pass" type="password">
 
-                    <label for="pass">Password</label><input id="pass" type="password">
+                               <label for="cpass">Confirm Password</label><input id="cpass" type="password">
+                              
+                              
+                               <button type="submit">Create Account</button>
+                                              
+                                
+                        </div>
 
-                    <label for="cpass">Confirm Password</label><input id="cpass" type="password">
-
-                    <button type="submit">Sign Up</button>
                 </form>
 
             </div>            
