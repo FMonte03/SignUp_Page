@@ -5,7 +5,7 @@
     --emerald: #5cdb95;  
     --darkgreen: #379683;
     --imperialBlue: #05386b; 
-    --lightBlue: #bdd6ee; 
+    --white: #ffffff; 
     box-sizing: border-box;
     background-color: var(--beige);
     overflow: hidden;
@@ -22,7 +22,7 @@ body{
 }
 
 .signUpRight{
-    background-color: var(--lightBlue);
+    background-color: var(--white);
     width: 30vw;
     padding: 5%;
     display: flex;
@@ -33,7 +33,7 @@ body{
 .logo{
     border-radius: 50%;
     height: auto;
-    width: 100px;
+    width: 75px;
 }
 
 i{
@@ -83,6 +83,9 @@ form{
     
 }
 
+form h1{
+    font-family: var(--headerfont);
+}
 
 button{
     margin-top: 10px;
@@ -95,15 +98,47 @@ label{
 
 input{
 
-
+   
     width: 98%;
     height: 20px;
-    
+    margin-bottom: 20px;
+    border: 0;
+    border-bottom: var(--imperialBlue) solid 2px;
 }
 
+
+
 input:focus{
-    outline-color: #5cdb95;
+    outline: 0;
+    border-bottom: var(--emerald) solid 2px;
+    
+
 }
+
+
+
+
+.field{
+    position: relative;
+  }
+  
+  label {
+    color: var(--imperialBlue);
+    position: relative;
+    position: absolute;
+    pointer-events: none;
+    left: 0px;
+    top: 0px;
+    transition: 0.2s ease all;
+    font-size: 13px;
+  }
+  input:focus ~ label{
+   color: var(--emerald);
+    top: -10px;
+    font-size:10px;
+  }
+
+
 
 .wrapper{
     display: flex;
