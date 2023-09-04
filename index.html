@@ -11,6 +11,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
     </head>
     <body>
         <div class="wrapper">
@@ -31,7 +35,7 @@
                 <p>This is not a real service! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
                 
                 <h1>Sign Up</h1>
-                <form action="" method="post">
+                <form  onsubmit="return validate(event)" >
 
                     
                         <div class="formWrapper">
@@ -56,6 +60,7 @@
                                     <label for="pass">Password</label> 
                                 
                                 </div>
+                                <p class="hint">Password must contain uppercase, lowercase letters, numbers, and symbols.</p>
 
                                 <!-- Input must come first or it doesn't work bc of ~ relation in css file -->
                                 <div class="field">
@@ -63,7 +68,7 @@
                                     <label for="cpass">Confirm Password</label> 
                                     
                                 </div>
-                              
+                              <p class="match"></p>
                               
                                <button type="submit">Create Account</button>
                                               
@@ -71,7 +76,7 @@
                         </div>
 
                 </form>
-                    <p>Already have an ccount? <a href="">Login</a></p>
+                    <p>Already have an account? <a href="">Login</a></p>
             </div>            
         
         </div>
