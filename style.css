@@ -133,7 +133,6 @@ input:focus{
   }
     .filled,
   .field input:focus ~ label{
-    position: absolute;
    color: var(--emerald);
     top: -10px;
     font-size:10px;
